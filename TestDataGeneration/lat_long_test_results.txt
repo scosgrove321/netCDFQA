@@ -1,0 +1,40 @@
+TestDataGeneration/TestDataStorage/test_correct_data.nc:
+  Check Passed
+TestDataGeneration/TestDataStorage/test_fail_min_lat.nc:
+  Check Failed
+    - Latitude minimum value differs from expected range. Expected Min: -89.5, Actual Min: -90.5
+    - Latitudes are not spaced by 1 degree. First offending value: -88.5
+TestDataGeneration/TestDataStorage/test_fail_max_lat.nc:
+  Check Failed
+    - Latitude maximum value differs from expected range. Expected Max: 89.5, Actual Max: 90.5
+    - Latitudes are not spaced by 1 degree. First offending value: 90.5
+TestDataGeneration/TestDataStorage/test_fail_min_lon.nc:
+  Check Failed
+    - Longitude minimum value differs from expected range. Expected Min: -179.5, Actual Min: -180.5
+    - Longitudes are not spaced by 1 degree. First offending value: -178.5
+TestDataGeneration/TestDataStorage/test_fail_max_lon.nc:
+  Check Failed
+    - Longitude maximum value differs from expected range. Expected Max: 179.5, Actual Max: 180.5
+    - Longitudes are not spaced by 1 degree. First offending value: 180.5
+TestDataGeneration/TestDataStorage/test_fail_multiple_lat.nc:
+  Check Failed
+    - Latitude values that appear more than once:
+Latitude: -89.5, Count: 2
+    - Latitudes are not spaced by 1 degree. First offending value: -89.5
+TestDataGeneration/TestDataStorage/test_fail_multiple_lon.nc:
+  Check Failed
+    - Longitude values that appear more than once:
+Longitude: -179.5, Count: 2
+    - Longitudes are not spaced by 1 degree. First offending value: -179.5
+TestDataGeneration/TestDataStorage/test_fail_spacing_lat.nc:
+  Check Failed
+    - Latitude minimum value differs from expected range. Expected Min: -89.5, Actual Min: -88.52378845214844
+    - Latitude maximum value differs from expected range. Expected Max: 89.5, Actual Max: 88.93678283691406
+    - Latitudes are not spaced by 1 degree. First offending value: -87.15306854248047
+TestDataGeneration/TestDataStorage/test_fail_spacing_lon.nc:
+  Check Failed
+    - Longitude minimum value differs from expected range. Expected Min: -179.5, Actual Min: -178.78665161132812
+    - Longitude maximum value differs from expected range. Expected Max: 179.5, Actual Max: 179.03480529785156
+    - Longitudes are not spaced by 1 degree. First offending value: -176.92869567871094
+TestDataGeneration/TestDataStorage/test_pass_lat_long.nc:
+  Check Passed
