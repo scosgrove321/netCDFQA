@@ -1,23 +1,21 @@
 TestDataGeneration/TestDataStorage/test_correct_data.nc:
   Check Failed
-    - Incorrect spacing between 'time' variable values. First incorrect spacing: --. Dimension info: {Time: --, Lat: -89.5, Lon: -179.5}. Variable info at location: {Time: --, Lat: -89.5, Lon: -179.5}.
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_correct_data.nc'
 TestDataGeneration/TestDataStorage/test_fail_missing_time_dim.nc:
   Check Failed
-    - Missing 'time' dimension.
-    - Missing 'time' variable.
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_fail_missing_time_dim.nc'
 TestDataGeneration/TestDataStorage/test_fail_missing_time_var.nc:
   Check Failed
-    - Missing 'time' variable.
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_fail_missing_time_var.nc'
 TestDataGeneration/TestDataStorage/test_fail_wrong_length.nc:
   Check Failed
-    - 'time' dimension length is 238, which is less than the expected minimum of 240.
-    - 'time' variable length is 238, which is less than the expected minimum of 240.
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_fail_wrong_length.nc'
 TestDataGeneration/TestDataStorage/test_fail_wrong_spacing.nc:
   Check Failed
-    - First incorrect value in 'time' variable: 1. Expected value: 2. Dimension info: {Time: 1, Lat: -89.5, Lon: -179.5}. Variable info at location: {Time: 1, Lat: -89.5, Lon: -179.5}.
-    - Incorrect spacing between 'time' variable values. First incorrect spacing: 0. Dimension info: {Time: 1, Lat: -89.5, Lon: -179.5}. Variable info at location: {Time: 1, Lat: -89.5, Lon: -179.5}.
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_fail_wrong_spacing.nc'
 TestDataGeneration/TestDataStorage/test_fail_wrong_values.nc:
   Check Failed
-    - First incorrect value in 'time' variable: 2. Expected value: 1. Dimension info: {Time: 2, Lat: -89.5, Lon: -179.5}. Variable info at location: {Time: 2, Lat: -89.5, Lon: -179.5}.
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_fail_wrong_values.nc'
 TestDataGeneration/TestDataStorage/test_pass_time.nc:
-  Check Passed
+  Check Failed
+    - Failed to open file: [Errno 2] No such file or directory: 'TestDataGeneration/TestDataStorage/test_pass_time.nc'

@@ -3,8 +3,8 @@ import numpy as np
 
 
 # Replace 'example.nc' with the path to your NetCDF file
-file_path = 'TestDataGeneration/TestDataStorage/test_correct_data.nc'
-ojk
+file_path = 'C:/Python/netCDFQA/RealData/v2023.nc'
+
 
 # Open the NetCDF file
 dataset = nc.Dataset(file_path, mode='r')

@@ -93,9 +93,11 @@ with nc.Dataset(file_path, 'w', format='NETCDF4') as dataset:
     # Generate the latitude and longitude values
     lat_values = np.linspace(-89.5, 89.5, 180)
     lon_values = np.linspace(-179.5, 179.5, 360)
+    time_values = np.linspace(0, 500, 500)
 
     # Assign values to the lat and lon variables
     lat_var[:] = lat_values
     lon_var[:] = lon_values
+    time_var[:] = time_values
 
 print(f"NetCDF file created at {file_path}")
