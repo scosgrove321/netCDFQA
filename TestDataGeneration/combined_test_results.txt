@@ -1,4 +1,0 @@
-TestDataGeneration/TestDataStorage/test_correct_data.nc:
-  Latitude and Longitude Check Passed
-  Time Check Failed
-    - Incorrect spacing between 'time' variable values. First incorrect spacing: --. Dimension info: {Time: --, Lat: -89.5, Lon: -179.5}. Variable info at location: {Time: --, Lat: -89.5, Lon: -179.5}.
