@@ -7,7 +7,7 @@ Author: Stephen Cosgrove
 Date: Oct 6, 2024
 Description: 
     This script processes NetCDF files to perform quality assurance checks on variable names and values. 
-    It specifically checks for expected dimensions, dimension size,  expected variables, and min/max variable values.
+    It specifically checks for expected dimensions, dimension size, expected variables, and min/max variable values.
 
 Required Libraries:
     - netCDF4: For handling NetCDF files.

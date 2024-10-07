@@ -3,7 +3,6 @@ from ExpectedNcVariable import Expected_Nc_Variable
 def check_variable(var):
     expected_var = getExpectedVar(var)
     if expected_var is None:
-        # Unknown variable
         print(f"Unknown variable found: {var.name}")
         return
     if not hasattr(var, 'units') and getattr(expected_var, 'units') is not None:
@@ -29,14 +28,19 @@ def check_variable(var):
         print(f"    There are {values_above_max.sum()} instances above the expected maximum of '{expected_max}'.")
     if getattr(expected_var, 'size') is not None:
         expected_size = getattr(expected_var, 'size')
-        if expected_size != getattr(var, 'size'):
-            print(f"Variable '{var.name}' has a size of '{getattr(var, 'size')}', which is different the expected size of '{expected_size}'.")
+        if expected_size > getattr(var, 'size'):
+            print(
+                f"Variable '{var.name}' has a size of '{getattr(var, 'size')}', which is lower than the expected size of '{expected_size}'.")
+        # Time is a special case, it can be greater than the expected size.
+        if expected_size < getattr(var, 'size') and var.name != "time":
+            print(
+                f"Variable '{var.name}' has a size of '{getattr(var, 'size')}', which is greater than the expected size of '{expected_size}'.")
 
 def getExpectedVar(var):
     #   Only add attributes that are mandatory
     match var.name.lower():
         case "time":
-            return Expected_Nc_Variable(name='time', min=396)
+            return Expected_Nc_Variable(name='time', size=396)
         case "lat":
             return Expected_Nc_Variable(name='lat', min=-89.5, max=89.5, size=180)
         case "lon":
