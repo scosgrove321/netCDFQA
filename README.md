@@ -24,8 +24,8 @@ QC Constraints:
         lon         [size = 360, min = -89.5, max = 89.5]
     Variables:
         fgco2_reg   [units='pgc/yr', min=-1, max=4]
-        fgco2       [ units='molc/m2/s', min=-1e-6, max=1e-6]
-        sfco2       [ units='uatm', min=200, max=500]
+        fgco2       [units='molc/m2/s', min=-1e-6, max=1e-6]
+        sfco2       [units='uatm', min=200, max=500]
         area        [units='m2']
         mask_sfc    [units='frac']
         area_reg    [units='m2']
